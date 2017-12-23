@@ -1,5 +1,5 @@
 function change() {
-document.getElementById("btn").innerHTML = "You. Will. Die! 😈";
+document.getElementById("btn").innerHTML = "You. Are. Already. Dead. 😈";
 
 }
 
@@ -9,3 +9,12 @@ function onClick() {
     clicks += 1;
     document.getElementById("clicks").innerHTML = clicks;
 };
+
+function mainFunction() {
+
+    change();
+    onClick();
+
+
+
+}
