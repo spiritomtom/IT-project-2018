@@ -39,7 +39,7 @@
 
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">Who are we?</h3>
-  <img src="qm.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="350" height="350">
+  <img src="qm.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
   <h3>We are unique.</h3>
 </div>
 
@@ -47,8 +47,17 @@
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">What do we do?</h3>
   <p>We simply love stalking, chasing, and killing people. But the important thing is - we do it with passion.</p>
-  <button id = "btn" type="button" onclick="mainFunction()">Click to see the future 😃</button>
-  <button id="cl" type="button" >Number of people that are already dead : <text id="clicks">   0</text>  </button>
+  <button id = "btn" type="button" onclick="change()">Click me first 😉</button>
+  <select id="mySelect" onchange="myFunction()">
+    <option value ="">▼ ▼ ▼ ▼ ▼ ▼
+    <option value="That is the most requested one , you are boring.">By a headshot
+    <option value="That is my favorite, I respekt you , gentlemen.">Throat slitting
+    <option value="Quite cruel , I can respekt that.">Bone cracking
+    <option value="You enjoy hurting yourself , dont you?">Burnt alive
+  </select>
+
+  <br><br><br><p id="result"></p>
+  
 </div>
 
 
